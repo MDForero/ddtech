@@ -34,3 +34,21 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# imagenes y archivos no deseados
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.mp4
+*.webm
+*.mp3
+*.wav
+*.ogg
+*.eot
+*.ttf
+*.woff
+*.woff2
+*.rar
+*.zip
