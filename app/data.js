@@ -39,7 +39,7 @@ export const valores = [
     {
         title:'Innovación Tecnológica',
         text:'Nos comprometemos a estar a la vanguardia de las últimas tecnologías y tendencias del desarrollo web y marketing digital para ofrecer soluciones innovadoras a nuestros clientes.',
-        icon:'/images/svg/wrench.svg',
+        icon:'/images/svg/gears.svg',
     },
     {
         title:'Excelencia en el Servicio',
@@ -54,16 +54,17 @@ export const valores = [
     {
         title:'Atención al Cliente',
         text:'Nos enorgullecemos de nuestra atención al cliente y nos comprometemos a brindar un servicio personalizado y de alta calidad. Estamos disponibles para responder a sus preguntas y ayudarlo en todo momento.',
-        icon:'/images/svg/len.svg',
+        icon:'/images/svg/magnifying.svg',
     },
-    {
-        title:'Integridad y Transparencia',
-        text:'Actuamos con integridad en todas nuestras interacciones, manteniendo una comunicación transparente y honesta tanto con nuestros clientes como dentro de nuestro equipo.',
-        icon:'/images/svg/len.svg',
-    },
+    
     {
         title:'Trabajo en Equipo',
         text:'Fomentamos un ambiente de trabajo colaborativo y respetuoso, donde cada miembro del equipo se siente valorado y motivado para contribuir al éxito de nuestros proyectos.',
+        icon:'/images/svg/team.svg',
+    },
+    {
+        title:'Responsabilidad Social y Ambiental',
+        text:'Somos conscientes de nuestro impacto en la sociedad y el medio ambiente. Nos comprometemos a operar de manera ética y sostenible, contribuyendo positivamente a las comunidades en las que trabajamos.',
         icon:'/images/svg/leaves.svg',
     }
 ]
