@@ -2,7 +2,7 @@ import { contacto } from "../data"
 
 export default function page() {
     return (<>
-        <div className="max-w-screen-2xl flex flex-col space-y-6 ">
+        <div className="max-w-screen-2xl flex flex-col space-y-6 mx-auto">
             <section className="flex justify-center items-center gap-9 flex-wrap">
                 {contacto.map((item) => <a key={item.title} href={item.url} target="_blank" className="flex flex-col items-center justify-center w-44 overflow-hidden border-2 p-4">
                     <img src={item.icon} alt={item.title} className="w-8 h-8" />

@@ -12,7 +12,7 @@ export default function page() {
                     </main>
                     <aside className="md:w-1/2 2xl:w-1/4">
                         <figure>
-                            <img src='default_banner.jpg' alt='Imagen que describe nuestra vision como empresa' className="w-full h-[420px]" />
+                            <img src='default_banner.jpg' alt='Imagen que describe nuestra vision como empresa' className="w-full aspect-video" />
                             <figcaption>Vision</figcaption>
                         </figure>
                     </aside>
@@ -24,13 +24,13 @@ export default function page() {
                     </main>
                     <aside className="md:w-1/2 2xl:w-1/4">
                         <figure>
-                            <img src='default_banner.jpg' alt='Imagen que describe nuestra vision como empresa' className="w-full h-[420px]" />
+                            <img src='default_banner.jpg' alt='Imagen que describe nuestra vision como empresa' className="w-full aspect-video" />
                             <figcaption>Vision</figcaption>
                         </figure>
                     </aside>
                 </article>
             </section>
-            <section className="space-y-14">
+            <section className="space-y-14 max-w-6xl mx-auto">
                 <div>
                     <h2 class="text-4xl font-semibold text-center">Valores Corporativos</h2>
                 </div>
