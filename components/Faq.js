@@ -1,5 +1,5 @@
 export default function Faq({ data }) {
-    const { beneficios , titulo } = data
+    const { beneficios , titulo } = data || {}
     return <section className="relative not-prose scroll-mt-[72px]" >
             <div className="absolute inset-0 bg-transparent">
             </div>
@@ -12,7 +12,7 @@ export default function Faq({ data }) {
                 </div>
             </div>
             <div className="mx-auto max-w-3xl select-none bg-transparent text-base text-gray-700">
-                {beneficios.map(item => 
+                {beneficios?.map(item => 
                     <details className="align-center flex justify-between card md:px-6 py-4 px-5 md:py-5 mb-2" name="beneficios">
                         <summary className="w-full pr-2 text-lg font-medium leading-6 text-gray-900 ">{item.pregunta}</summary>
                         <p className='mt-3 select-none'>{item.respuesta}</p>

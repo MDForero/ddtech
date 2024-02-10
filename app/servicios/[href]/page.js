@@ -6,10 +6,11 @@ import Hero from "@/components/Hero"
 export default async function page({ params }) {
     const data = await fetch('http://127.0.0.1:3000/servicios.json', { cache: 'no-cache' }).then(res => res.json())
     const item = await data.find(item => item.href === params.href)
+    console.log(item)
     return <div className="max-w-screen-2xl mx-auto flex flex-col items-center justify-center bg-white">
-        <Hero data={{ title: item.landing_pages.titulo, description: item.landing_pages.propuesta_valor }} />
+        <Hero data={{ title: item?.landing_pages?.titulo, description: item?.landing_pages?.propuesta_valor }} />
         <Features data={item.landing_pages}/>
-        <Faq data={item.landing_pages.faq} />
+        <Faq data={item?.landing_pages?.faq} />
         <Cta/>
 
     </div>
