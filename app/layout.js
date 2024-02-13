@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,11 +28,12 @@ export default function RootLayout({ children }) {
           <Nav links={links} />
         </header>
         <div>
-          <section className="max-w-screen-2xl mx-auto">
+          <section className="max-w-screen-2xl mx-auto flex flex-col space-y-36 items-center justify-center w-full">
 
             {children}
           </section>
           <footer>
+            <Footer paginas={links}/>
           </footer>
         </div>
       </body>

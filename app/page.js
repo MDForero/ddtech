@@ -8,15 +8,18 @@ export default async function Home() {
   const casos = await fetch('http://127.0.0.1:3000/casos-de-exito.json', { cache: 'no-cache' }).then(res => res.json())
 
   return (<>
-    <main>
-      <div className="max-w-3xl ">
+    <main className=" relative">
+      <figure className="h-96">
+        <img src="/default_banner.jpg" loading="lazy" className="h-full max-w-screen-2xl w-screen object-cover"/>
+      </figure>
+      <div className="max-w-3xl mx-auto absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center flex-col">
         <h1 className="flex justify-center items-center text-xl"><img src='/8.svg' className="h-8" /> Impulsando tu negocio al siguiente nivel. </h1>
         <h2>Soluciones innovadoras para emprendedores como tu</h2>
         <p>Construimos soluciones digitales para emprendedores y empresas que buscan crecer y mejorar su presencia en línea. </p>
         <p>Desarrollamos aplicaciones web y móviles, tiendas en línea, sistemas de gestión y mucho más.</p>
       </div>
     </main>
-    <section className="flex relative max-w-2xl">
+    <section className="max-w-7xl">
 
       {/* <details name="somos" className="border">
         <summary >¿Quienes somos?</summary>

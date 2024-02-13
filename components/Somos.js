@@ -18,18 +18,27 @@ const Somos = ({ data }) => {
     ]
     const [response, setResponse] = useState(questions[0].response || 'No hay respuesta')
     return (
-        <div className='max-w-xl flex flex-col justify-center text-justify border p-4  space-y-4'>
-            <header className='flex justify-center gap-5'>
-                {questions.map(item => <button
-                    className='hidden sm:flex items-center  text-center space-x-3 px-2 h-12 bg-white ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm rounded-lg text-slate-400 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700'
-                    key={item.question}
-                    onClick={() => setResponse(item.response)}
-                >{item.question}</button>)}
-            </header>
-            <div>
-                {response}
+        <section className='flex flex-wrap justify-center items-center'>
+            <div className='space-y-12'>
+                <header className='flex justify-center gap-2 md:gap-10 flex-wrap' >
+                    {questions.map(item => <button
+                        className='sm:flex items-center w-44  text-center space-x-3 px-2 h-12 bg-white ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm rounded-lg text-slate-400 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700'
+                        key={item.question}
+                        onClick={() => setResponse(item.response)}
+                    >{item.question}</button>)}
+                </header>
+                <p className='max-w-lg mx-auto'>
+                    {response}
+                </p>
             </div>
-        </div>
+            <div class="flex items-center max-w-2xl min-w-96 w-full gap-8 p-8 lg:p-24">
+                <img src="/default_banner.jpg" class="w-1/2 rounded-lg" alt="Tree" />
+                <div>
+                    <img src="/default_banner.jpg" class="mb-8 rounded-lg" alt="Tree" />
+                    <img src="/default_banner.jpg" class="rounded-lg" alt="Tree" />
+                </div>
+            </div>
+        </section>
     )
 }
 
