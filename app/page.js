@@ -12,7 +12,7 @@ export default async function Home() {
       <figure className="h-96">
         <img src="/default_banner.jpg" loading="lazy" className="h-full max-w-screen-2xl w-screen object-cover"/>
       </figure>
-      <div className="max-w-3xl mx-auto absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center flex-col">
+      <div className="max-w-3xl mx-auto absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center flex-col text-white">
         <h1 className="flex justify-center items-center text-xl"><img src='/8.svg' className="h-8" /> Impulsando tu negocio al siguiente nivel. </h1>
         <h2>Soluciones innovadoras para emprendedores como tu</h2>
         <p>Construimos soluciones digitales para emprendedores y empresas que buscan crecer y mejorar su presencia en línea. </p>
@@ -39,7 +39,7 @@ export default async function Home() {
     <section className="flex gap-12 justify-center flex-wrap">
       {servicios.map(item => <Servicio item={item} />)}
     </section>
-    <section>
+    <section className="space-y-16">
       {casos.map(item => <Caso item={item} />)}
     </section>
   </>

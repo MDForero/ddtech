@@ -1,9 +1,13 @@
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import ButtonBackTop from "@/components/ButtonBackTop";
+const roboto = Roboto({
+  subsets: ["latin"],
+  display: "swap",
+  weight:'400'
+});
 
 
 
@@ -23,17 +27,17 @@ export const redes = [
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className + 'bg-primary'}>
         <header className="relative z-50">
           <Nav links={links} />
         </header>
         <div>
           <section className="max-w-screen-2xl mx-auto flex flex-col space-y-36 items-center justify-center w-full">
-
             {children}
+          <ButtonBackTop />
           </section>
           <footer>
-            <Footer paginas={links}/>
+            <Footer paginas={links} />
           </footer>
         </div>
       </body>

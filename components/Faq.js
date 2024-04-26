@@ -14,7 +14,7 @@ export default function Faq({ data }) {
             <div className="mx-auto max-w-3xl select-none bg-transparent text-base text-gray-700">
                 {beneficios?.map(item => 
                     <details className="align-center flex justify-between card md:px-6 py-4 px-5 md:py-5 mb-2" name="beneficios">
-                        <summary className="w-full pr-2 text-lg font-medium leading-6 text-gray-900 ">{item.pregunta}</summary>
+                        <summary className="w-full pr-2 text-lg font-medium leading-6 text-secondary ">{item.pregunta}</summary>
                         <p className='mt-3 select-none'>{item.respuesta}</p>
                     </details>
               )}

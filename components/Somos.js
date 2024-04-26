@@ -18,11 +18,11 @@ const Somos = ({ data }) => {
     ]
     const [response, setResponse] = useState(questions[0].response || 'No hay respuesta')
     return (
-        <section className='flex flex-wrap justify-center items-center'>
-            <div className='space-y-12'>
+        <section className='flex flex-wrap justify-center items-center m-2'>
+            <div className='space-y-12 border rounded-md hover:shadow-2xl hover:shadow-gray-400 duration-700 p-4'>
                 <header className='flex justify-center gap-2 md:gap-10 flex-wrap' >
                     {questions.map(item => <button
-                        className='sm:flex items-center w-44  text-center space-x-3 px-2 h-12 bg-white ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm rounded-lg text-slate-400 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700'
+                        className='sm:flex items-center w-44 text-primary text-center space-x-3 px-2 h-12 bg-secondary ring-1 ring-slate-900/10  hover:ring-secondary focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-primary focus:text-secondary shadow-sm rounded-lg '
                         key={item.question}
                         onClick={() => setResponse(item.response)}
                     >{item.question}</button>)}
@@ -31,11 +31,11 @@ const Somos = ({ data }) => {
                     {response}
                 </p>
             </div>
-            <div class="flex items-center max-w-2xl min-w-96 w-full gap-8 p-8 lg:p-24">
-                <img src="/default_banner.jpg" class="w-1/2 rounded-lg" alt="Tree" />
+            <div class="flex items-center lg:w-2/5 min-w-96 w-full gap-8 p-8 lg:p-24">
+                <img src="/default_banner.jpg" class="lg:w-40 w-1/2 h-80 object-cover rounded-lg" alt="Tree" />
                 <div>
-                    <img src="/default_banner.jpg" class="mb-8 rounded-lg" alt="Tree" />
-                    <img src="/default_banner.jpg" class="rounded-lg" alt="Tree" />
+                    <img src="/default_banner.jpg" class="mb-8 rounded-lg h-44 object-cover" alt="Tree" />
+                    <img src="/default_banner.jpg" class="rounded-lg h-44 object-cover" alt="Tree" />
                 </div>
             </div>
         </section>

@@ -6,7 +6,7 @@ const Footer = async ({ paginas }) => {
     const servicios = await fetch('http://127.0.0.1:3000/servicios.json', { cache: 'no-cache' }).then(res => res.json())
     console.log(servicios)
     return (<>
-        <section className='flex flex-wrap  justify-center lg:justify-between  gap-10 p-4 max-w-screen-2xl mx-auto bg-sky-800'>
+        <section className='flex flex-wrap  justify-center lg:justify-between  gap-10 p-4 max-w-screen-2xl mx-auto bg-secondary text-primary'>
             <div className='px-4 space-y-4 flex items-center flex-col  w-80'>
                 <h1 className='font-bold text-xl'>¿Quienes somos?</h1>
                 <p>Somos un equipo de desarrolladores y diseñadores que amamos lo que hacemos. Nos apasiona crear soluciones digitales que ayuden a emprendedores y empresas a crecer y mejorar su presencia en línea.</p>

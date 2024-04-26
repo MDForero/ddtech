@@ -5,9 +5,9 @@ export default function page() {
         <div className="max-w-screen-2xl flex flex-col space-y-6 mx-auto">
             <section className="flex justify-center items-center gap-9 flex-wrap">
                 {contacto.map((item) => <a key={item.title} href={item.url} target="_blank" className="flex flex-col items-center justify-center w-44 overflow-hidden border-2 p-4">
-                    <img src={item.icon} alt={item.title} className="w-8 h-8" />
-                    <h2>{item.title}</h2>
-                    <p className="overflow-ellipsis px-2 w-40 overflow-hidden text-center">{item.description}</p>
+                    <img src={item.icon} alt={item.title} className="w-8 h-8 bg-quaternary rounded-full p-1 ring-secondary" />
+                    <h2 className="font-bold text-secondary">{item.title}</h2>
+                    <p className="overflow-ellipsis px-2 w-40 overflow-hidden text-center text-quaternary">{item.description}</p>
                 </a>)}
             </section>
             <section>

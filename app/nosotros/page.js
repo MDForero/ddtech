@@ -36,9 +36,9 @@ export default function page() {
                 </div>
                 <section  id="valores_corporativos" class="bg -max-w-6xl mx-auto flex gap-20 flex-wrap justify-center">
                     {valores.map((item) => <article class=" w-80 p-4 space-y-4 border rounded-md hover:shadow-2xl hover:shadow-gray-300 duration-700">
-                        <img loading="lazy" src={item.icon} class="w-16 h-16 mx-auto" alt="Innovación Tecnológica" />
-                        <h2 class="text-center text-3xl font-semibold text-gray-200 ">{item.title}</h2>
-                        <p class="text-gray-100">{item.text}</p>
+                        <img loading="lazy" src={item.icon} class="w-16 h-16 mx-auto bg-secondary rounded-full p-2" alt="Innovación Tecnológica" />
+                        <h2 class="text-center text-3xl font-semibold text-secondary ">{item.title}</h2>
+                        <p class="text-quaternary">{item.text}</p>
                     </article>)}
 
                 </section>
